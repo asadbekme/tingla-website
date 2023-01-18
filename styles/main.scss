@@ -1,0 +1,26 @@
+// customize
+@import './variables/variables';
+@import './normalize/normalize';
+
+// blocks
+@import './blocks/header';
+@import './blocks/hero';
+
+body {
+    font-family: 'SF Pro Display';
+    width: 100vw;
+    color: $black;
+    overflow-x: hidden;
+    background-image: url('../images/icons/background-lines.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 576px) {
+        background-image: url('../images/icons/background-lines-mobile.svg');
+    }
+}
+
+.container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
