@@ -542,6 +542,89 @@ template {
   }
 }
 
+.player {
+  position: relative;
+  height: 500px;
+  border-radius: 20px;
+  margin-bottom: 94px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1140px) {
+  .player {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .player {
+    height: 360px;
+    margin-bottom: 150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .player {
+    height: 300px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .player {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .player {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .player {
+    height: 150px;
+  }
+}
+.player__video {
+  width: 100%;
+  display: block;
+}
+@media screen and (max-width: 1140px) {
+  .player__video {
+    transform: scale(1.3);
+  }
+}
+@media screen and (max-width: 900px) {
+  .player__video {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 700px) {
+  .player__video {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 450px) {
+  .player__video {
+    transform: scale(0.92);
+  }
+}
+.player__buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.player__buttons--pause {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .player__buttons {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
 body {
   font-family: "SF Pro Display";
   width: 100vw;
