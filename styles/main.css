@@ -1160,6 +1160,141 @@ template {
   }
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 62px 0 20px 0;
+}
+@media screen and (max-width: 1140px) {
+  .footer {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 820px) {
+  .footer {
+    flex-direction: column;
+    margin-top: 360px;
+    padding-top: 0;
+  }
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 44px;
+}
+.footer__reserved {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.5;
+}
+@media screen and (max-width: 820px) {
+  .footer__reserved {
+    position: absolute;
+    bottom: 0;
+  }
+}
+.footer__item {
+  margin-bottom: 17px;
+}
+.footer__item a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  transition: all 0.3s;
+}
+.footer__item a:hover {
+  color: #0F0F54;
+}
+@media screen and (max-width: 400px) {
+  .footer__item {
+    margin-bottom: 14px;
+  }
+}
+.footer__phone {
+  display: block;
+  position: relative;
+  margin-bottom: 35px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  transition: all 0.3s;
+}
+.footer__phone:hover {
+  color: #0F0F54;
+}
+.footer__phone:before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/icons/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 400px) {
+  .footer__phone:before {
+    width: 18px;
+    left: -25px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .footer__phone:before {
+    display: none;
+  }
+}
+.footer__phone span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.5;
+}
+@media screen and (max-width: 820px) {
+  .footer__phone {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer__phone {
+    font-size: 14px;
+    bottom: 40%;
+  }
+}
+.footer__list {
+  display: flex;
+}
+@media screen and (max-width: 840px) {
+  .footer__list {
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+}
+.footer__socials {
+  margin-right: 20px;
+}
+.footer__socials a svg:hover path {
+  fill: #0F0F54;
+}
+.footer__socials a svg path {
+  fill: #000000;
+  transition: all 0.3s;
+}
+.footer__socials:last-child {
+  margin-right: 0;
+}
+
 body {
   font-family: "SF Pro Display";
   width: 100vw;
@@ -1179,4 +1314,19 @@ body {
   max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a,
+button,
+svg {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
