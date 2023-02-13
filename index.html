@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./images/icons/favicon-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <!-- aos css cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Tingla - Landing Page</title>
 </head>
 
@@ -24,7 +26,7 @@
 
     <main>
         <!-- Hero section -->
-        <section class="hero container">
+        <section class="hero container" data-aos="fade-up">
             <h1 class="hero__title">Biz bilan har lahza — unumli</h1>
             <p class="hero__text">
                 Tingla ilovasi orqali nodir asarlarning audio shaklida tinlashingiz va elektron tarzda mutolaa
@@ -36,7 +38,7 @@
         <!-- /Hero section -->
 
         <!-- Player section -->
-        <section class="player container">
+        <section class="player container" data-aos="fade-up">
             <video src="./videos/mobile-app-promotion.mp4" class="player__video"></video>
             <button class="player__buttons player__buttons--play">
                 <img src="./images/icons/play-icon.svg" alt="play icon">
@@ -48,7 +50,7 @@
         <!-- /Player section -->
 
         <!-- About section -->
-        <section class="about container">
+        <section class="about container" data-aos="fade-up">
             <h2 class="about__title">
                 Loyiha haqida
             </h2>
@@ -62,7 +64,7 @@
         <!-- /About section -->
 
         <!-- Info section -->
-        <section class="info container">
+        <section class="info container" data-aos="fade-up">
             <img src="./images/mobile-player.png" class="info__image" alt="mobile player">
             <div class="info__texts">
                 <h3 class="info__title">
@@ -79,7 +81,7 @@
         <!-- /Info section -->
 
         <!-- Payment section -->
-        <section class="payment container">
+        <section class="payment container" data-aos="fade-up">
             <h4 class="payment__title">
                 To’lov tizimi
             </h4>
@@ -93,7 +95,7 @@
         <!-- /Payment section -->
 
         <!-- Download section -->
-        <section class="download container">
+        <section class="download container" data-aos="fade-up">
             <img src="./images/tingla-ui.png" class="download__image" alt="mobile app" width="394">
             <div class="download__wrapper">
                 <h5 class="download__title">Kitob o’qishdan rohatlaning. Hoziroq yuklab oling.</h5>
@@ -164,6 +166,11 @@
 
     <!-- custom js file link -->
     <script src="./scripts/script.js"></script>
+    <!-- aos js cdn link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
